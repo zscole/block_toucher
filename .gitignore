@@ -1,0 +1,47 @@
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+*.pdf
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.env
+conf.yml
+/cmd/cmd
+market-data
+
+tools/init_code_finder/
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+
+
+*.csv
+*.txt
+
+# Go Patch
+/vendor/
+/Godeps/
+
+# IDE
+.vscode
+.idea
+
+# pprof output
+/profile
+*.pprof
+
+
+## hard hat  extra weight
+node_modules
+cache
+test/helpers/hardhat/docs/
