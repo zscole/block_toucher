@@ -1,4 +1,4 @@
-module block_toucher
+module blockToucher
 
 go 1.19
 
