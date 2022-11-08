@@ -42,11 +42,11 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("Block header: %v\n", header.Number.String())
 	fmt.Printf("Block data: %d\n", block)
+	fmt.Printf("Block header: %v\n", header.Number.String())
+	fmt.Printf("Tx count: %v\n", len(block.Transactions()))
 	fmt.Printf("Block number: %v\n", block.Number().Uint64())
 	fmt.Printf("Block difficulty: %v\n", block.Difficulty().Uint64())
 	fmt.Printf("Block hash: %v\n", block.Hash().Hex())
-	fmt.Printf("Tx count: %v\n", len(block.Transactions()))
 
 }
