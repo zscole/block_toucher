@@ -22,7 +22,8 @@ func getEnvVar(key string) string {
 }
 
 func main() {
-	var blockNum = big.NewInt(15928325)
+	blockNum := big.NewInt(15928325)
+	blockNumber := (blockNum)
 
 	clientUrl := getEnvVar("CLIENT_URL")
 
@@ -36,7 +37,6 @@ func main() {
 		log.Fatal(err)
 	}
 
-	blockNumber := (blockNum)
 	block, err := client.BlockByNumber(context.Background(), blockNumber)
 	if err != nil {
 		log.Fatal(err)
